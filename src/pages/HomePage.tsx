@@ -100,8 +100,6 @@ const HomePage = () => {
     );
   }
 
-  console.log(products);
-
   return (
     <div>
       <div className={styles.productGrid}>
