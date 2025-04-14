@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script>
+      sessionStorage.redirect = location.pathname;
+      window.location.href =
+        '/salfa-app' +
+        (location.pathname.startsWith('/salfa-app')
+          ? location.pathname
+          : '/index.html');
+    </script>
+  </head>
+  <body>
+    Redirecting...
+  </body>
+</html>

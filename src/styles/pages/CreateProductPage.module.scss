@@ -1,0 +1,28 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.product_form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  max-width: 500px;
+  width: 100%;
+}
+
+.form_button {
+  background: #40bfc1;
+}
+
+.form_button:hover {
+  background: #2da8a9;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+}
+
+.preview_img {
+  width: 100%;
+  max-width: 600px;
+}

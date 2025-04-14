@@ -1,0 +1,149 @@
+.productCard {
+  border: 1px solid #e0e0e0;
+  border-radius: 12px;
+  overflow: hidden;
+  transition: all 0.3s ease;
+  background: white;
+  position: relative;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.productCard:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+.productImageContainer {
+  position: relative;
+  width: 100%;
+  height: 200px;
+  background: #f8f8f8;
+}
+
+.productImage {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  padding: 20px;
+}
+
+.btn_block {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 10px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin-top: 10px;
+}
+
+.btn {
+  background: rgba(255, 255, 255, 0.8);
+  border: none;
+  width: 30px;
+  height: 30px;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.favoriteButton {
+  @extend .btn;
+  color: #d32f2f;
+}
+
+.favoriteButton:hover {
+  background: rgba(255, 255, 255, 0.9);
+  color: #d32f2f;
+}
+
+.favoriteButton.active {
+  color: #d32f2f;
+}
+
+.deleteButton {
+  @extend .btn;
+  color: #666;
+}
+
+.deleteButton:hover {
+  background: rgba(255, 255, 255, 0.9);
+  color: #d32f2f;
+}
+
+.productContent {
+  padding: 16px;
+}
+
+.productTitle {
+  margin: 0 0 8px 0;
+  font-size: 1rem;
+  color: #333;
+  font-weight: 600;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.productDescription {
+  color: #666;
+  font-size: 0.85rem;
+  margin: 0 0 16px 0;
+  line-height: 1.4;
+  height: 60px;
+  overflow: hidden;
+  -webkit-box-orient: vertical;
+}
+
+.productFooter {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 12px;
+}
+
+.productPrice {
+  font-weight: bold;
+  color: #2a5b84;
+  font-size: 1.1rem;
+}
+
+.addToCartButton {
+  background: #2a5b84;
+  color: white;
+  border: none;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.addToCartButton:hover {
+  background: #1d4568;
+  transform: scale(1.1);
+}
+
+.ratingValue {
+  font-weight: bold;
+  margin-left: 5px;
+  color: #333;
+  font-size: 14px;
+}
+
+.ratingCount {
+  color: #666;
+  font-size: 12px;
+}
+
+.text_rate {
+  font-size: 12px;
+  color: gray;
+}

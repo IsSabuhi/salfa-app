@@ -1,0 +1,36 @@
+.container {
+}
+
+.productGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  grid-template-rows: repeat(2, 350px);
+  gap: 20px;
+  height: calc(2 * 350px + 40px);
+  overflow: hidden;
+  /* max-width: 1400px; */
+  padding: 10px;
+}
+
+/* Адаптивные стили для разных размеров экранов */
+@media (max-width: 1200px) {
+  .productGrid {
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  }
+}
+
+@media (max-width: 768px) {
+  .productGrid {
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 16px;
+    padding: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .productGrid {
+    grid-template-columns: 1fr;
+    gap: 12px;
+    padding: 10px;
+  }
+}
