@@ -5,6 +5,6 @@ export const NAVBAR_LINKS = [
   },
   {
     title: 'Создать продукт',
-    link: '/create-porduct',
+    link: '/create-product',
   },
 ];
